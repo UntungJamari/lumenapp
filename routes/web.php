@@ -23,7 +23,7 @@ $router->get('/data', function () use ($router) {
 });
 
 $router->get('/tes', function () use ($router) {
-    $results = app('db')->select("SELECT * FROM user");
+    $results = app('db')->select("SELECT * FROM mekanik where id = 1");
     return response()->json($results);
 });
 
